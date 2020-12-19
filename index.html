@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>survey</title>
+</head>
+<body>
+    <div>
+        <h1 id="title">Cadet Survey Form</h1>
+        <p id="description">Tell us about yourself</p><br>
+        <form id="survey-form">
+            <label for="name" id="name-label" class="labels" >NAME:</label><br>
+            <input type="text" id="name" placeholder="name" class="input" required><br>
+            <label for="email" id="email-label" class="labels">EMAIL</label><br>
+            <input type="email" id="email" placeholder="Email" class="input"required><br>
+            <label for="number" id="number-label" class="labels">  Age: </label>
+            <div class="right">
+              <input id="number" class="input" min="1" max="120" type="number" placeholder="Enter Your age here"><br>
+<label for="option" class="label">will you ever recomment us if had the choice:</label><br>
+<select id="dropdown" name="cars"><br>
+  <option value="No">No</option>
+  <option value="maybe">probably</option>
+  <option value="noDoubt">Yes without a doubt</option>
+</select><br>
+    <div><!--rate us-->
+    <label class="label" for="radio">How is our design</label>
+        <ul class="choice" style="list-style:none;">
+                <li class="radio"><input name="radio-buttons" value="1" type="radio"> Could better<label> </label></input> </li></li>
+                <li class="radio"><input name="radio-buttons" value="2" type="radio"> It is great</input><label></label></li></ul>
+
+               <!--<list> 
+                   <li><label for="design" name="radio-buttons" class="radio" id="designRate" value="1">Could better</label></li>
+            <input type="radio" name="radio-buttons"id="designRateCircle"value="2">
+                 <li><label for="design" name="radio-buttons"id="designRate"value="3">It is great</label></li>
+                       <input type="radio" name="radio-buttons"id="designRateCircle"value="4"></p1></list>-->
+    </div>
+<!--Improvement-->
+    <h2>What would you like to see improved?<br>
+        <p2>(Check all that apply)</p2><br>
+        <input type="radio" id="communication" name="communication" value="5">
+            <label for="comunication">comminucation method</label><br>
+                <input type="checkbox" id="Data" name="Data" value="6">
+                    <label for="Data">Data visualization</label><br>
+                        <input type="checkbox" id="other" name="gender" value="7">
+                             <label for="other">More details</label><br>
+                                 <input type="checkbox" id="challeng" name="Challenge" value="8">
+                                    <label for="other">Challenge</label><br>
+                                    <input type="checkbox" id="other" name="gender" value="9">
+                                    <label for="other">other</label>
+</h2>
+<textarea name="message" rows="10" cols="30" placeholder="Leave a comment here..."></textarea>
+    </textarea>
+<br>
+    <button id="submit" type="submit">
+    Submit
+    </button><br>
+              </div>
+
+        </form>
+</div>
+</body>
+</html>
